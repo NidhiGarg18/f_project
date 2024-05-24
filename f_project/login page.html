@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(img_4.gif);
+        background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 1540px 710px ;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+    }
+    .textbox1{
+        background: linear-gradient(180deg,blue,red,pink);
+    
+    transition: all 0.3s;
+    background-color: black;
+    border: solid;
+    border-color:palegreen;
+    width: 400px;
+    height:400px;
+    text-align:center;
+    align-items: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    }
+    .textbox1:hover{
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px rgb(255, 0, 225);
+    }
+    input[type="text"] {
+        height:40px;
+    width:280px;
+        text-align: center;
+        font-size: 20px;
+    }
+    input[type="password"]{
+        height:40px;
+    width:280px;
+        text-align:center;
+        font-size: 20px;
+         /* background-color:red;  */
+    }
+    button{
+        background-color: aqua;
+        width: 150px;
+    }
+    p{
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+    h2{
+        color: black;
+    }
+</style>
+<body>
+    <div class="textbox1">
+    <form action="/action.php" >
+        <input type="text" placeholder="username">
+        <br>
+        <br>
+        <input type="password" placeholder="password" maxlength="10">
+    </form>
+    <br>
+    <button>
+        <!-- <h2>login</h2> -->
+        <h2><a href="index.html">login</a></h2>
+    </button>
+    <p>If not have a account?</p>
+        <h2><a href="sign up.html">sign up</a></h2>
+    </div>
+    </body>
+</html>
